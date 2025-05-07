@@ -10,14 +10,14 @@
 
 <br>
 
-<p> Facundo Se encargo de hacer el Header, Hero y Footer. Ademas de que al final junto todas las partes del trabajo en una</p>
+<p> Facundo se encargó de hacer el Header, Hero y Footer. Además, al final juntó todas las partes del trabajo en una. </p>
 
 <br>
 
-<p> Valentina Se encargo de hacer la sección de tarjetas de los productos</p>
+<p> Valentina se encargó de hacer la sección de tarjetas de los productos. </p>
 
-<p> Ana Encargada de la tercera seccion de banners </p>
+<p> Ana fue encargada de la tercera sección de banners. </p>
 
 <br>
 
-<p>Roy se encargo de la cuarta seccion de mensiones </p>
+<p> Roy se encargó de la cuarta sección de menciones. </p>
