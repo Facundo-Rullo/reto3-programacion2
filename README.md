@@ -8,6 +8,8 @@
     <li>Roy Scheurer</li>
 </ul>
 
+<br>
+
 <p> Facundo Se encargo de hacer el Header, Hero y Footer. Ademas de que al final junto todas las partes del trabajo en una</p>
 
 <br>
