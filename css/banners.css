@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     padding: 2rem;
+    gap: 2rem; /* Espacio entre los bloques */
+    flex-wrap: wrap; /* Los bloques se ajustan en pantallas pequeñas */
 }
 
 .bloque {
@@ -12,6 +14,7 @@
     width: 250px;
     text-align: center;
     font-family: var(--font_family--text);
+    margin: 1rem; /* Margen para separar los bloques */
 }
 
 .bloque img {
@@ -28,4 +31,11 @@
 .bloque p {
     font-size: 0.9rem;
     color: var(--color_negro);
+}
+
+/* Resp. para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .bloque {
+        width: 100%; /* Los bloques ocupan el 100% del ancho en pantallas pequeñas */
+    }
 }
