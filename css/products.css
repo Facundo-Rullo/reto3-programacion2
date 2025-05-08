@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+/* Contenedor principal de la sección de características */
+.features {
+    display: flex;                  /* Activa Flexbox para organizar horizontalmente */
+    justify-content: space-between;/* Distribuye espacio igual entre los elementos */
+    flex-wrap: wrap;                /* Permite que los bloques se acomoden en varias filas si es necesario */
+    gap: 2rem;                      /* Espacio entre cada bloque */
+    padding: 2rem 1rem;             /* Espacio interno arriba/abajo: 2rem, lados: 1rem */
+  }
+  
+  /* Estilo de cada bloque individual */
+  .feature-item {
+    flex: 1 1 250px;                /* Cada ítem ocupa al menos 250px y se adapta al espacio */
+    text-align: center;            /* Centra todo el contenido dentro del bloque */
+    padding: 1rem;                 /* Espacio interno del bloque */
+    border-radius: 12px;           /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #f9f9f9;     /* Color de fondo claro */
+  }
+  
+  /* Imagen dentro de cada bloque */
+  .feature-item img {
+    width: 60px;                   /* Ancho fijo de la imagen */
+    height: 60px;                  /* Alto fijo de la imagen */
+    margin-bottom: 1rem;           /* Espacio debajo de la imagen */
+  }
+  
+  /* Título de cada bloque */
+  .feature-item h3 {
+    margin-bottom: 0.5rem;         /* Espacio debajo del título */
+    font-size: 1.2rem;             /* Tamaño de letra del título */
+  }
+  
+  /* Descripción de cada bloque */
+  .feature-item p {
+    color: #555;                   /* Color para el texto(preguntar como poner en negro) */
+    font-size: 0.95rem;            /* Tamaño ligeramente más pequeño que el normal */
+  }
+  
+  /* Estilos para pantallas pequeñas (responsive) */
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;      /* Cambia de fila a columna */
+      align-items: center;         /* Centra los bloques verticalmente */
+    }
+  
+    .feature-item {
+      flex: 1 1 100%;              /* Cada bloque ocupa todo el ancho disponible */
+    }
+  }
