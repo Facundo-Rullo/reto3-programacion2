@@ -3,15 +3,18 @@
 /* Contenedor principal de la sección de características */
 .features {
     display: flex;                  /* Activa Flexbox para organizar horizontalmente */
-    justify-content: space-between;/* Distribuye espacio igual entre los elementos */
+    justify-content: space-evenly;/* Distribuye espacio igual entre los elementos */
     flex-wrap: wrap;                /* Permite que los bloques se acomoden en varias filas si es necesario */
     gap: 2rem;                      /* Espacio entre cada bloque */
     padding: 2rem 1rem;             /* Espacio interno arriba/abajo: 2rem, lados: 1rem */
+    background-image: url(../assets/curve.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
   }
   
   /* Estilo de cada bloque individual */
   .feature-item {
-    flex: 1 1 250px;                /* Cada ítem ocupa al menos 250px y se adapta al espacio */
     text-align: center;            /* Centra todo el contenido dentro del bloque */
     padding: 1rem;                 /* Espacio interno del bloque */
     border-radius: 12px;           /* Bordes redondeados */
@@ -38,6 +41,12 @@
     font-size: 0.95rem;            /* Tamaño ligeramente más pequeño que el normal */
   }
   
+  /*botones*/
+  .btn-verde{
+    background-color: #7acc2d;
+    border: none;
+    color:#fff;
+  }
   /* Estilos para pantallas pequeñas (responsive) */
   @media (max-width: 768px) {
     .features {
