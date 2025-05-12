@@ -1,44 +1,54 @@
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+:root {
+  /* Colors */
+  --color_header: #7acc2d;
+  --color_footer: #313337;
+  --color_negro: #000;
+  --color_blanco: #fff;
+
+  /* Fonts */
+  --font_family--title: "Varela Round";
+  --font_family--text: "Roboto";
+}
+
 /* Contenedor principal de la sección de características */
 .features {
     display: flex;                  /* Activa Flexbox para organizar horizontalmente */
-    justify-content: space-evenly;/* Distribuye espacio igual entre los elementos */
+    justify-content: center;/* Distribuye espacio igual entre los elementos */
     flex-wrap: wrap;                /* Permite que los bloques se acomoden en varias filas si es necesario */
-    gap: 2rem;                      /* Espacio entre cada bloque */
-    padding: 2rem 1rem;             /* Espacio interno arriba/abajo: 2rem, lados: 1rem */
+    gap: 4rem;
+    padding: 5rem 0 10rem 0;            
     background-image: url(../assets/curve.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40vh;
   }
   
   /* Estilo de cada bloque individual */
   .feature-item {
-    text-align: center;            /* Centra todo el contenido dentro del bloque */
     padding: 1rem;                 /* Espacio interno del bloque */
     border-radius: 12px;           /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     background-color: #f9f9f9;     /* Color de fondo claro */
-  }
-  
-  /* Imagen dentro de cada bloque */
-  .feature-item img {
-    width: 60px;                   /* Ancho fijo de la imagen */
-    height: 60px;                  /* Alto fijo de la imagen */
-    margin-bottom: 1rem;           /* Espacio debajo de la imagen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   /* Título de cada bloque */
   .feature-item h3 {
+    align-self: start;
     margin-bottom: 0.5rem;         /* Espacio debajo del título */
     font-size: 1.2rem;             /* Tamaño de letra del título */
+    font-family: var(--font_family--text);
   }
   
   /* Descripción de cada bloque */
   .feature-item p {
+    align-self: start;
     color: #555;                   /* Color para el texto(preguntar como poner en negro) */
     font-size: 0.95rem;            /* Tamaño ligeramente más pequeño que el normal */
+    font-family: var(--font_family--text);
   }
   
   /*botones*/
@@ -46,15 +56,24 @@
     background-color: #7acc2d;
     border: none;
     color:#fff;
+    font-family: var(--font_family--text);
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
   }
   /* Estilos para pantallas pequeñas (responsive) */
+
+  @media (max-width: 1440px) {
+    .features {
+      background-position: center;
+    }
+  }
+
   @media (max-width: 768px) {
     .features {
       flex-direction: column;      /* Cambia de fila a columna */
       align-items: center;         /* Centra los bloques verticalmente */
-    }
-  
-    .feature-item {
-      flex: 1 1 100%;              /* Cada bloque ocupa todo el ancho disponible */
+      padding: 5rem 2rem 10rem 2rem;            
     }
   }
