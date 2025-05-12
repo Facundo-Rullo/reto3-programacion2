@@ -1,24 +1,35 @@
+:root {
+    /* Colors */
+    --color_negro: #000;
+    --color_blanco: #fff;
+    --sombra: rgba(0, 0, 0, 0.1);
+
+    /* Fonts */
+    --font_family--title: "Varela Round";
+    --font_family--text: "Roboto";
+}
+
 .bloques {
     display: flex;
     justify-content: center;
     padding: 2rem;
-    gap: 2rem; /* Espacio entre los bloques */
-    flex-wrap: wrap; /* Los bloques se ajustan en pantallas pequeñas */
+    gap: 2rem; 
+    flex-wrap: wrap; 
 }
 
 .bloque {
     background-color: var(--color_blanco);
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 250px;
+    box-shadow: 0 2px 5px var(--sombra);
+    width: 300px;
     text-align: center;
     font-family: var(--font_family--text);
-    margin: 1rem; /* Margen para separar los bloques */
+    margin: 1rem; 
 }
 
 .bloque img {
-    width: 80px;
+    width: 100px;
     height: auto;
     margin-bottom: 1rem;
 }
@@ -31,11 +42,4 @@
 .bloque p {
     font-size: 0.9rem;
     color: var(--color_negro);
-}
-
-/* Resp. para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .bloque {
-        width: 100%; /* Los bloques ocupan el 100% del ancho en pantallas pequeñas */
-    }
 }

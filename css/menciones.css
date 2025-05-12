@@ -1,0 +1,75 @@
+:root {
+    /* Colors */
+    --color_negro: #000;
+    --color_blanco: #fff;
+
+    /* Fonts */
+    --font_family--title: "Varela Round";
+    --font_family--text: "Roboto";
+}
+
+.boxmencions{
+    padding: 2rem;
+}
+
+.menciones{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 21px;
+}
+
+.imagesmenciones{
+    width: 200%;
+    height:100%;
+    max-width: 100%;   
+}
+
+.fontmenciones{
+    font-family: var(--font_family--title);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 269px;
+    height: auto;
+    margin:0;
+    padding: auto;
+    flex-wrap: wrap;
+    box-shadow: 0px 1px 14px var(--color_negro);
+}
+
+.epigrafo{
+    text-align: start;
+    display: auto;
+    margin: -1px;
+    font-size:small;
+    font-family: var(--font_family--title);
+    padding: 9px;
+    flex-wrap: wrap
+}
+
+.menciontext{
+    margin:-9px;
+    font-family: sans-serif;
+    font-size: small;
+    padding: 10px;
+    text-align:start;
+    display: flex;
+}
+
+@media (max-width: 500px) {
+    .menciones, .epigrafo {
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}

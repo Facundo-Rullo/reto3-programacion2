@@ -1,21 +1,20 @@
 
 :root {
   /* Colors */
-  --color_header: #7acc2d;
-  --color_footer: #313337;
   --color_negro: #000;
   --color_blanco: #fff;
+  --sombra: rgba(0, 0, 0, 0.1);
+  --color_boton: #7acc2d;
 
   /* Fonts */
   --font_family--title: "Varela Round";
   --font_family--text: "Roboto";
 }
 
-/* Contenedor principal de la sección de características */
-.features {
-    display: flex;                  /* Activa Flexbox para organizar horizontalmente */
-    justify-content: center;/* Distribuye espacio igual entre los elementos */
-    flex-wrap: wrap;                /* Permite que los bloques se acomoden en varias filas si es necesario */
+.products {
+    display: flex;                  
+    justify-content: center;
+    flex-wrap: wrap;                
     gap: 4rem;
     padding: 5rem 0 10rem 0;            
     background-image: url(../assets/curve.png);
@@ -23,57 +22,52 @@
     background-size: cover;
   }
   
-  /* Estilo de cada bloque individual */
-  .feature-item {
-    padding: 1rem;                 /* Espacio interno del bloque */
-    border-radius: 12px;           /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    background-color: #f9f9f9;     /* Color de fondo claro */
+  .products-item {
+    padding: 1rem;                
+    border-radius: 12px;          
+    box-shadow: 0 0 10px var(--sombra); 
+    background-color: var(--color_blanco);    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   
-  /* Título de cada bloque */
-  .feature-item h3 {
+  .products-item h3 {
     align-self: start;
-    margin-bottom: 0.5rem;         /* Espacio debajo del título */
-    font-size: 1.2rem;             /* Tamaño de letra del título */
+    margin-bottom: 0.5rem;         
+    font-size: 1.2rem;             
     font-family: var(--font_family--text);
   }
   
-  /* Descripción de cada bloque */
-  .feature-item p {
+  .products-item p {
     align-self: start;
-    color: #555;                   /* Color para el texto(preguntar como poner en negro) */
-    font-size: 0.95rem;            /* Tamaño ligeramente más pequeño que el normal */
+    color: var(--color_negro);               
+    font-size: 0.95rem;       
     font-family: var(--font_family--text);
   }
   
-  /*botones*/
   .btn-verde{
-    background-color: #7acc2d;
+    background-color: var(--color_boton);
     border: none;
-    color:#fff;
+    color:var(--color_blanco);
     font-family: var(--font_family--text);
     cursor: pointer;
     padding: 1rem;
     width: 100%;
     border-radius: 5px;
   }
-  /* Estilos para pantallas pequeñas (responsive) */
 
   @media (max-width: 1440px) {
-    .features {
+    .products {
       background-position: center;
     }
   }
 
   @media (max-width: 768px) {
-    .features {
-      flex-direction: column;      /* Cambia de fila a columna */
-      align-items: center;         /* Centra los bloques verticalmente */
+    .products {
+      flex-direction: column;      
+      align-items: center;        
       padding: 5rem 2rem 10rem 2rem;            
     }
   }
