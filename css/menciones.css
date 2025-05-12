@@ -1,0 +1,73 @@
+.boxmencions{
+    font-size:large;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh; 
+    min-height: 100dvh;
+}
+
+.menciones{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 21px;
+}
+
+.imagesmenciones{
+    width: 200%;
+    height:100%;
+    max-width: 100%;   
+}
+
+.fontmenciones{
+    font-size:x-large;  
+    font-family: "Open Sans";
+    text-align: center;
+    text-shadow: 9mm;
+    padding: 20px;
+    padding-top: 27px;
+    padding-bottom: 47px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 269px;
+    height: auto;
+    margin:0;
+    padding: auto;
+    flex-wrap: wrap;
+    box-shadow: 0px 1px 14px black;
+}
+
+.epigrafo{
+    text-align: start;
+    display: auto;
+    margin: -1px;
+    font-size:small;
+    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
+    padding: 9px;
+    flex-wrap: wrap
+}
+
+.menciontext{
+    margin:-9px;
+    font-family: sans-serif;
+    font-size: small;
+    padding: 10px;
+    text-align:start;
+    display: flex;
+}
+
+@media (max-width: 500px) {
+    .menciones, .epigrafo {
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
