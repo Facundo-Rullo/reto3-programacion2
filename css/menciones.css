@@ -65,6 +65,10 @@
     display: flex;
 }
 
+hr {
+    border-color: var(--color_blanco);
+}
+
 @media (max-width: 500px) {
     .menciones, .epigrafo {
         display: flex;
